@@ -2,7 +2,7 @@ declare var jquery: any;
 declare var $: any;
 $(document).ready(function () {
     setTimeout(() => {
-        $('#sun').addClass('in');
+        $('#sun').fadeIn().addClass('in');
         $('#section1 .fristImg').animate({
             'background-position-y': '0%'
         }, 14000, 'linear');
