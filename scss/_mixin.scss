@@ -1,0 +1,34 @@
+@mixin transfrom($trnsfromtype, $friststVal, $secondval) {   
+    @if $trnsfromtype == 'rotate' {
+        -moz-transform: rotate($lefVal);
+        -webkit-transform: rotate($lefVal);
+        transform: rotate($lefVal);
+    
+       }@else {
+           @if $trnsfromtype =="translate"{
+               -moz-transform: translate($friststVal, $secondval);
+               -webkit-transform: translate($friststVal, $secondval);
+               transform: translate($friststVal, $secondval);
+           }@else{
+               @if $trnsfromtype =="skew"{
+                   -moz-transform: skew($fristVal, $secondval);
+                   -webkit-transform: skew($fristVal, $secondval);
+                   transform: skew($fristVal, $secondval);
+               }
+           }
+    }       
+}
+
+@mixin trans($type, $time){
+    -moz-transition: all $type $time;
+    -webkit-transition: all $type $time;
+    -o-transition: all $type $time;
+    -ms-transition: all $type $time;
+    transition: all $type $time;
+}
+@mixin cover() {
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}

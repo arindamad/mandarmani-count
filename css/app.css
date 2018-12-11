@@ -1,0 +1,318 @@
+/* your plugins be here */
+.countWrap {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 100%;
+  z-index: 10;
+  width: 60%;
+  min-width: 800px;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+  .countWrap h2 {
+    font-size: 4vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px; }
+  .countWrap h1 {
+    font-size: 6vw;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 20px; }
+  .countWrap h4 {
+    color: #fff;
+    text-align: center;
+    margin-bottom: 20px; }
+
+.countdown {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60%;
+  min-width: 800px; }
+  .countdown .container {
+    position: relative; }
+    .countdown .container svg {
+      position: absolute;
+      top: 0;
+      left: 0; }
+    .countdown .container .label {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -55%);
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around; }
+      .countdown .container .label span:first-of-type {
+        font-size: 55px;
+        color: #fff; }
+      .countdown .container .label span:nth-of-type(2) {
+        font-size: 20px;
+        text-transform: uppercase;
+        color: #fff; }
+
+@media screen and (max-width: 800px) {
+  .countdown {
+    flex-direction: column;
+    align-items: center;
+    height: 900px;
+    width: auto;
+    min-width: auto; } }
+/* bases.dir your bases laouts form here */
+* {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -o-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden; }
+
+section, .full {
+  width: 100%;
+  float: left; }
+
+a, button {
+  text-decoration: none;
+  cursor: pointer; }
+
+ul {
+  list-style: none; }
+
+/* banner laouts form here */
+.bannerPanel {
+  height: 100vh;
+  position: relative;
+  z-index: 1; }
+  .bannerPanel::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2; }
+  .bannerPanel .item {
+    width: 100%;
+    float: left; }
+    .bannerPanel .item .itemInner {
+      width: 100%;
+      float: left; }
+      .bannerPanel .item .itemInner img {
+        width: 100%;
+        display: block;
+        height: 100vh;
+        object-fit: cover;
+        -moz-object-fit: cover;
+        -webkit-object-fit: cover;
+        -o-object-fit: cover; }
+  .bannerPanel .owl-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%); }
+  .bannerPanel .BannerTxt {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    max-width: 600px;
+    width: 100%;
+    z-index: 4;
+    -moz-transform: translate(-50%, -50%);
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: #fff; }
+    .bannerPanel .BannerTxt h2 {
+      font-size: 40px;
+      color: inherit; }
+    .bannerPanel .BannerTxt .Timer {
+      width: 100%;
+      float: left;
+      text-align: center; }
+      .bannerPanel .BannerTxt .Timer ul {
+        display: inline-block; }
+        .bannerPanel .BannerTxt .Timer ul li {
+          width: 90px;
+          float: left;
+          font-family: 'Bungee Inline', cursive;
+          font-size: 50px;
+          position: relative;
+          margin-right: 19px; }
+          .bannerPanel .BannerTxt .Timer ul li::after {
+            content: ":";
+            position: absolute;
+            top: 50%;
+            right: -19px;
+            -moz-transform: translate(0, -50%);
+            -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%); }
+          .bannerPanel .BannerTxt .Timer ul li:last-child {
+            margin-right: 0px; }
+          .bannerPanel .BannerTxt .Timer ul li:last-child::after {
+            display: none; }
+
+.manFace {
+  position: absolute;
+  bottom: 0;
+  left: 0px;
+  max-width: 400px;
+  width: 100%;
+  z-index: 9;
+  -moz-transition: all "ease-in-out" 300ms;
+  -webkit-transition: all "ease-in-out" 300ms;
+  -o-transition: all "ease-in-out" 300ms;
+  -ms-transition: all "ease-in-out" 300ms;
+  transition: all "ease-in-out" 300ms;
+  opacity: 0;
+  animation-duration: 5s; }
+  .manFace img {
+    width: 100%;
+    display: block; }
+
+.svgDataStructre {
+  max-width: 400px;
+  width: 100%;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  mix-blend-mode: color-dodge;
+  z-index: 10;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); }
+
+.popMovie {
+  animation-name: pop;
+  animation-duration: .5s; }
+
+.movieBase {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  z-index: 10;
+  color: #fff;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.2); }
+  .movieBase h2 {
+    font-size: 15vw;
+    font-weight: 700; }
+
+@-webkit-keyframes pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: .1; }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; } }
+@keyframes pop {
+  0% {
+    transform: translate(-50%, -50%) scale(0.1);
+    opacity: .1; }
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+    opacity: 1; } }
+.sketch {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  height: 40%; }
+
+.cover {
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
+
+.relative {
+  position: relative; }
+
+.fristImg {
+  width: 100%;
+  float: left;
+  height: 100vh; }
+
+.beforeCarousel {
+  transition: all ease-in-out 10s; }
+
+.sun {
+  width: 200px;
+  position: absolute;
+  top: 100%;
+  left: 10%;
+  z-index: 10;
+  -moz-transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  -moz-transition: all ease-in-out 14s;
+  -webkit-transition: all ease-in-out 14s;
+  transition: all ease-in-out 14s;
+  border-radius: 50%;
+  background-color: #fff; }
+  .sun.in {
+    top: 5%;
+    transform: scale(0.5) translate(-50%, -50%);
+    box-shadow: 0 0 290px 70px rgba(255, 240, 106, 0.4), 0 0 100px 2px rgba(255, 255, 255, 0.6); }
+    .sun.in img {
+      opacity: .1;
+      transition: all ease-in-out 14s;
+      filter: blur(5px); }
+  .sun img {
+    width: 100%;
+    display: block;
+    border-radius: 50%;
+    opacity: 1; }
+
+.commonBnt {
+  padding: 0px 20px;
+  line-height: 40px;
+  height: 40px;
+  border: none;
+  background: transparent; }
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 12; }
+
+.btn {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: auto;
+  height: auto;
+  z-index: 13; }
+  .btn .commonBnt {
+    padding: 0 50px;
+    height: 70px;
+    font-size: 23px;
+    line-height: 70px;
+    background: #00c0c0;
+    color: #fff;
+    -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
+    border-radius: 10px; }
+
+/* Your moudle be her*/
+
+/*# sourceMappingURL=app.css.map */
