@@ -246,9 +246,6 @@ ul {
   float: left;
   height: 100vh; }
 
-.beforeCarousel {
-  transition: all ease-in-out 10s; }
-
 .sun {
   width: 200px;
   position: absolute;
