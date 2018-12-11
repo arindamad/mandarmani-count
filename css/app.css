@@ -246,6 +246,9 @@ ul {
   float: left;
   height: 100vh; }
 
+.beforeCarousel {
+  background: #1b548b; }
+
 .sun {
   width: 200px;
   position: absolute;
