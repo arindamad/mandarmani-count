@@ -1,6 +1,6 @@
 $(document).ready(function () {
     setTimeout(function () {
-        $('#sun').addClass('in');
+        $('#sun').fadeIn().addClass('in');
         $('#section1 .fristImg').animate({
             'background-position-y': '0%'
         }, 14000, 'linear');
