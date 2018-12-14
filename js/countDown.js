@@ -1,5 +1,5 @@
 // Set Launch Date (ms)
-const launchDate = new Date("December 21, 2018 13:00:00").getTime();
+const launchDate = new Date("December 21, 2018 00:00:00").getTime();
 
 // Context object
 const c = {
